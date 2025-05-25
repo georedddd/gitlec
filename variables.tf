@@ -80,7 +80,7 @@ variable "tags" {
 
 variable "throttling_rate_limit" {
   description = "How many sustained requests per second should the API process at most; see https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-throttling.html"
-  default     = 1000000
+  default     = 10000
 
 }
 
