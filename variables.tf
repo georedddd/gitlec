@@ -33,7 +33,7 @@ variable "function_timeout" {
 
 variable "memory_size" {
   description = "Amount of memory in MB your Lambda Function can use at runtime"
-  default     = 512
+  default     = 256
 }
 
 variable "function_runtime" {
@@ -80,7 +80,8 @@ variable "tags" {
 
 variable "throttling_rate_limit" {
   description = "How many sustained requests per second should the API process at most; see https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-throttling.html"
-  default     = 10000
+  default     = 1000000
+
 }
 
 variable "throttling_burst_limit" {
